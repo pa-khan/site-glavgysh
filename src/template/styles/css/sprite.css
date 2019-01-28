@@ -1,0 +1,65 @@
+.icon-arrow-right {
+  background-image: url(../../img/sprite.png);
+  background-position: -79px -50px;
+  width: 30px;
+  height: 9px; }
+
+.icon-check-mark {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 79px;
+  height: 59px; }
+
+.icon-chevron-left {
+  background-image: url(../../img/sprite.png);
+  background-position: -129px -57px;
+  width: 19px;
+  height: 31px; }
+
+.icon-chevron-right {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -115px;
+  width: 19px;
+  height: 31px; }
+
+.icon-chevron-top {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -59px;
+  width: 38px;
+  height: 26px; }
+
+.icon-plus-gradient {
+  background-image: url(../../img/sprite.png);
+  background-position: -30px -85px;
+  width: 27px;
+  height: 27px; }
+
+.icon-plus-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -79px 0px;
+  width: 50px;
+  height: 50px; }
+
+.icon-security-blue {
+  background-image: url(../../img/sprite.png);
+  background-position: -129px -29px;
+  width: 22px;
+  height: 28px; }
+
+.icon-security-gray {
+  background-image: url(../../img/sprite.png);
+  background-position: -129px 0px;
+  width: 23px;
+  height: 29px; }
+
+.icon-telephone {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -85px;
+  width: 30px;
+  height: 30px; }
+
+.icon-x {
+  background-image: url(../../img/sprite.png);
+  background-position: -129px -88px;
+  width: 13px;
+  height: 13px; }

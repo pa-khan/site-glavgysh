@@ -1,7 +1,73 @@
-@media screen and (max-width: 1199px)
+@import sprite.sass
+
+@media screen and (max-width: 1260px)
 	.case
 		width: 950px
-	
+
+	.header
+		&__title
+			margin-bottom: 40px
+			br
+				display: none
+		&__info
+			padding-top: 25px
+			li
+				width: 100%
+				margin-bottom: 10px
+				&:last-of-type
+					margin-bottom: 0
+		&__content, &__form
+			width: 50%
+
+	.icons
+		&__item
+			margin-bottom: 15px
+			&:last-of-type
+				margin-bottom: 0
+		&__icon
+			width: 64px
+			text-align: center
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+
+	.catalog
+		margin-top: 0
+		&__img
+			width: 480px
+		&__data
+			margin-left: -145px
+
+	.order
+		&__case
+			&:before
+				background-size: auto 100%
+				height: 500px
+				background-repeat: no-repeat
+				left: -100px
+				bottom: 0
+		&__wrap
+			margin-right: 50px
+			position: relative
+			z-index: 1
+
+	.portfolio
+		&__item
+			height: 250px
+
+	.reviews
+		&__list
+
+			.slick-prev
+				left: -15px
+			.slick-next
+				right: -15px
+
+	.map
+		&__arrea
+			height: 620px
+		&__form
+			margin-left: -470px
 	.hidden-lg
 		display: block
 	
@@ -11,8 +77,230 @@
 
 	
 @media screen and (max-width: 992px)
+	h1
+		font-size: 76px
+		line-height: 80px
+
+	h2
+		font-size: 38px !important
+		line-height: 40px !important
+
+	h3
+		font-size: 28px
+		line-height: 30px
+	
+	
 	.case
 		width: 750px
+
+	.panel
+		top: 0
+		left: 0
+		right: auto
+		bottom: 0
+		border-bottom: none
+		background-color: #fff
+		width: 320px
+		border-right: 1px solid rgba(196, 196, 196, 0.8)
+		transform: translateX(-100%)
+		&_show
+			transform: none
+		li
+			width: 100%
+			margin-bottom: 10px
+			font-size: 19px
+			&:last-of-type
+				margin-bottom: 0
+
+	.header
+		padding-top: 45px
+		min-height: 1px
+		padding-bottom: 45px
+		&__wrap
+			padding-top: 50px
+		&__phone, &__btn
+			display: none
+		&__call
+			margin-left: auto
+			margin-right: 25px
+			@include sprite($telephone)
+			cursor: pointer
+		&__content
+			width: 42%
+		&__form
+			width: 58%
+
+
+	.hum
+		width: 40px
+		cursor: pointer
+		span
+			display: block
+			margin-bottom: 9px
+			position: relative
+			transition: .3s
+			height: 4px
+			background-color: #000
+			&:last-of-type
+				margin-bottom: 0
+		&_toggle
+			span
+				&:nth-of-type(1)
+					transform: rotate(45deg)
+					top: 13px
+				&:nth-of-type(2)
+					opacity: 0
+				&:nth-of-type(3)
+					transform: rotate(-45deg)
+					top: -13px
+	
+
+	.catalog
+		padding-bottom: 50px
+		&__wrap
+			position: relative
+		&__img
+			width: 350px
+			height: 450px
+		&__data
+			margin-top: 0
+			width: 500px
+			top: 30px
+			bottom: 30px
+			border: 15px solid #3596ce
+			background: none
+			height: auto
+			position: absolute
+			right: 0
+		&__text
+			h3
+				margin-bottom: 20px
+
+	.data
+		padding-top: 40px
+		padding-bottom: 40px
+		&__item
+			&:after
+				margin-top: 12px
+				margin-bottom: 12px
+		&__title
+			font-size: 20px
+		&__text
+			font-size: 16px
+	
+
+	.share
+		&__btn
+			
+
+	.btn
+		&_fz-big
+			span
+				font-size: 18px
+
+	.product
+		padding-top: 35px
+		&__text
+			margin-bottom: 35px
+			h2
+				margin-bottom: 15px
+				margin-top: 30px
+				&:first-of-type
+					margin-top: 0
+				&:before
+					display: none
+
+	.types
+		&__title
+			margin-bottom: 30px
+		&__list
+			margin-left: -5px
+			margin-right: -5px
+		&__item
+			width: calc(33.33% - 10px)
+			margin-left: 5px
+			margin-right: 5px
+		&__img
+			height: 180px
+		&__name
+			padding: 10px 20px
+			font-size: 16px
+	
+	.order
+		&__case
+			&:before
+				display: none
+		&__wrap
+			padding-top: 50px
+			padding-bottom: 50px
+			margin-left: auto
+			margin-right: auto
+			
+	.manufacture
+		padding-top: 35px
+		padding-bottom: 90px
+		&__title
+			margin-bottom: 20px
+		&__text
+			margin-bottom: 15px
+	
+	.portfolio
+		margin-top: -60px
+		&__title
+			padding-bottom: 20px
+
+		&__item
+			height: 200px
+
+	.reviews
+		padding-bottom: 25px
+		&__title
+			margin-bottom: 25px
+		&__list
+			.slick-arrow
+				width: 52px
+				height: 52px
+				top: auto
+				bottom: -24px
+				transform: none
+				&:after
+					transform: scale(.8)
+			.slick-prev
+				left: 50%
+				margin-left: -57px
+			.slick-next
+				right: 50%
+				margin-right: -57px
+
+		&__item
+			padding: 20px 20px 40px
+
+		&__body
+			margin-bottom: 15px
+
+		&__name
+			padding-left: 20px
+
+	.map
+		margin-top: 40px
+		&__arrea
+			height: 600px
+		&__form
+			margin-left: -362px
+
+	.footer
+		&__desc
+			display: none
+
+	.up
+		&_show
+			transform: scale(.7)
+
+	.popup
+		&_policy
+			.popup
+				&__text
+					padding: 20px
 
 	.hidden-md
 		display: block		
@@ -23,13 +311,258 @@
 
 	
 @media screen and (max-width: 767px)
+	h1
+		font-size: 32px
+		line-height: 34px
+	h2
+		font-size: 28px !important
+		line-height: 30px !important
+		br
+			display: none
+	h3
+		font-size: 22px
+		line-height: 24px
+
 	.case
 		width: 100%
 
+	.panel
+		width: 230px
+		li
+			font-size: 18px
+			
+
+	.header
+		padding-top: 25px
+		&__desc
+			display: none
+		&__content
+			width: 100%
+			padding-right: 0
+			.header
+				&__title
+					display: none
+		&__wrap
+			padding-top: 20px
+		&__title
+			margin-bottom: 20px
+		&__info
+			padding-top: 0
+			padding-bottom: 25px
+			li
+				font-size: 20px
+				letter-spacing: 0
+				padding-left: 22px
+				&:before
+					width: 12px
+					height: 12px
+					border: 3px solid #3191cd
+					top: 6px
+		&__form
+			width: 100%
+			padding: 25px 20px 25px
+			margin-top: 10px
+			.form
+				&__title
+					margin-bottom: 15px
+				&__input
+					margin-bottom: 18px
+
+				&__btn
+					margin-top: 0
+	.icons
+		&__list
+			align-items: flex-start
+		&__item
+			width: 33.333%
+			flex-direction: column
+			margin-right: 0
+		&__icon
+			height: 56px
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 8px
+		&__text
+			font-size: 12px
+			line-height: 16px
+			text-align: center
+			font-weight: 700
+		
+	.form
+		&__title
+			font-size: 20px	
+			line-height: 22px
+			margin-bottom: 5px
+
+
+	.catalog
+		&__title
+			margin-bottom: 15px
+		&__nav
+			margin-left: -10px
+			margin-bottom: 35px
+			li
+				width: 100%
+			a
+				display: inline-flex
+			span
+				font-size: 18px
+				padding: 7px 10px 5px
+		
+		&__img
+			margin-left: -15px
+			margin-right: -15px
+			width: calc(100% + 30px)
+
+		&__data
+			position: relative
+			top: 0
+			bottom: 0
+			margin-left: 0
+			margin-top: -75px
+			padding: 80px 15px 25px
+			width: 100%
+			
+	.catalog
+		padding-bottom: 35px
+		&__text
+			margin-top: 30px
+			h3
+				margin-bottom: 10px
+			p
+				font-size: 16px
+			
+	.share
+		padding-top: 30px
+		padding-bottom: 30px
+		&__title
+			margin-bottom: 25px
+		&__form
+			margin-left: 0
+			margin-right: 0
+			.form
+				&__input
+					margin-bottom: 13px
+				&__input, &__btn
+					width: 100%
+				&__policy
+					margin-top: 30px
+	.types
+		&__title
+			margin-bottom: 20px
+		&__list
+			justify-content: center
+		&__item
+			width: 280px
+			margin-bottom: 10px
+
+	.faq
+		padding-top: 30px
+		&__title
+			margin-bottom: 20px
+
+	.faq
+		padding-top: 35px
+		&__title
+			text-align: center
+		&__head
+			&:before, &:after
+				right: 10px
+			span
+				font-size: 18px
+				line-height: 18px
+				padding-left: 20px
+				padding-right: 40px
+				min-height: 60px
+		&__body
+			padding: 15px
+			font-size: 16px
+
+	.order
+		padding: 40px 0
+		&__title
+			margin-bottom: 30px
+		&__case
+			border: none
+		&__wrap
+			padding-top: 0
+			padding-bottom: 0
+			.form
+				&__policy
+					br
+						display: none
+	.portfolio
+		&__item
+			width: 50%
+		&__btn-wrap
+			padding-top: 20px
+
+	.manufacture
+		padding-bottom: 110px
+	.map
+		&__form
+			left: 15px
+			right: 15px
+			margin-left: 0
+			width: calc(100% - 30px)
+			padding: 20px 20px 15px
+	.footer
+		&__wrap
+			flex-direction: column
+		&__logo
+			margin-right: 0
+		&__phone
+			text-align: center
+			margin-right: auto
+			margin-top: 10px
+			margin-bottom: 10px
+		&__phone, &__btn
+			display: none
+			
+			
+	.popup
+		&_small
+			width: 95%
+			padding: 25px
+		&__title
+			margin-bottom: 0
+		&__wrap
+			margin-top: 0
+			&.form
+				margin-top: 20px
+			
+			
+	.input
+		&_border
+			.input
+				&__wrap
+					height: 50px
+					padding-left: 20px
+					padding-right: 30px
+	.btn
+		span
+			padding-left: 15px
+			padding-right: 15px
+		&_normal, &_big
+			span
+				height: 50px
+				font-size: 16px !important
+
+		&_fz-big
+			span
+				height: 50px
+				font-size: 16px
 	.hidden-sm
 		display: block
 	
 	.hidden-xs
-		display: none
+		display: none !important
 	
-
+		
+@media screen and (max-width: 420px)
+	.catalog
+		&__img
+			height: 380px
